@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\openvr_api_public.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\jsoncpp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\dirtools_public.cpp">
+      <Filter>VRCore</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\envvartools_public.cpp">
+      <Filter>VRCore</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\pathtools_public.cpp">
+      <Filter>VRCore</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\sharedlibtools_public.cpp">
+      <Filter>VRCore</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\hmderrors_public.cpp">
+      <Filter>VRCore</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\vrpathregistry_public.cpp">
+      <Filter>VRCore</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\strtools_public.cpp">
+      <Filter>VRCore</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{0F7505B0-9F8C-3BFD-973D-31D8B5DCD5C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VRCore">
+      <UniqueIdentifier>{D9DCB36F-5BF6-3ADE-9D39-694B3C1D70F2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
