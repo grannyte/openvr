@@ -59,40 +59,45 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\bin\win64\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)\openvr\bin\win64\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">openvr_api64.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">openvr_api64</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\bin\win64\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">openvr_api64.dir\Release\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">openvr_api64</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\bin\win64\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(SolutionDir)\openvr\bin\win64\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">openvr_api64.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">openvr_api64</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\bin\win64\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(SolutionDir)\openvr\bin\win64\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">openvr_api64.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">openvr_api64</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\..\headers;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\openvr\src;$(SolutionDir)\openvr\src\..\headers;$(SolutionDir)\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;VR_API_PUBLIC;OPENVR_BUILD_STATIC;WIN64;VRCORE_NO_PLATFORM;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
@@ -101,10 +106,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;VR_API_PUBLIC;OPENVR_BUILD_STATIC;WIN64;VRCORE_NO_PLATFORM;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\..\headers;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\openvr\src;$(SolutionDir)\openvr\src\..\headers;$(SolutionDir)\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\..\headers;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\openvr\src;$(SolutionDir)\openvr\src\..\headers;$(SolutionDir)\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -117,20 +122,25 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\..\headers;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\openvr\src;$(SolutionDir)\openvr\src\..\headers;$(SolutionDir)\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VR_API_PUBLIC;OPENVR_BUILD_STATIC;WIN64;VRCORE_NO_PLATFORM;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
@@ -141,10 +151,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VR_API_PUBLIC;OPENVR_BUILD_STATIC;WIN64;VRCORE_NO_PLATFORM;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\..\headers;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\openvr\src;$(SolutionDir)\openvr\src\..\headers;$(SolutionDir)\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\..\headers;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\openvr\src;$(SolutionDir)\openvr\src\..\headers;$(SolutionDir)\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -157,20 +167,25 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\..\headers;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\openvr\src;$(SolutionDir)\openvr\src\..\headers;$(SolutionDir)\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VR_API_PUBLIC;OPENVR_BUILD_STATIC;WIN64;VRCORE_NO_PLATFORM;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
@@ -181,10 +196,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VR_API_PUBLIC;OPENVR_BUILD_STATIC;WIN64;VRCORE_NO_PLATFORM;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\..\headers;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\openvr\src;$(SolutionDir)\openvr\src\..\headers;$(SolutionDir)\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\..\headers;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\openvr\src;$(SolutionDir)\openvr\src\..\headers;$(SolutionDir)\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -197,21 +212,26 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\..\headers;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\openvr\src;$(SolutionDir)\openvr\src\..\headers;$(SolutionDir)\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VR_API_PUBLIC;OPENVR_BUILD_STATIC;WIN64;VRCORE_NO_PLATFORM;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
@@ -220,10 +240,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VR_API_PUBLIC;OPENVR_BUILD_STATIC;WIN64;VRCORE_NO_PLATFORM;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\..\headers;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\openvr\src;$(SolutionDir)\openvr\src\..\headers;$(SolutionDir)\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\..\headers;D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\openvr\src;$(SolutionDir)\openvr\src\..\headers;$(SolutionDir)\openvr\src\vrcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -235,76 +255,19 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\CMakeLists.txt">
-      <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr/src/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr" "-BD:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr" --check-stamp-file "D:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr/src/CMakeFiles/generate.stamp"
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr/src/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr" "-BD:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr" --check-stamp-file "D:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr/src/CMakeFiles/generate.stamp"
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr/src/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr" "-BD:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr" --check-stamp-file "D:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr/src/CMakeFiles/generate.stamp"
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr/src/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr" "-BD:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr" --check-stamp-file "D:/Users/David/Documents/Visual Studio 2010/Projects/Outerspacegit/openvr/src/CMakeFiles/generate.stamp"
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\openvr_api_public.cpp" />
-    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\jsoncpp.cpp" />
-    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\dirtools_public.cpp" />
-    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\envvartools_public.cpp" />
-    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\pathtools_public.cpp" />
-    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\sharedlibtools_public.cpp" />
-    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\hmderrors_public.cpp" />
-    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\vrpathregistry_public.cpp" />
-    <ClCompile Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\src\vrcore\strtools_public.cpp" />
+    <ClCompile Include="$(SolutionDir)\openvr\src\openvr_api_public.cpp" />
+    <ClCompile Include="$(SolutionDir)\openvr\src\jsoncpp.cpp" />
+    <ClCompile Include="$(SolutionDir)\openvr\src\vrcore\dirtools_public.cpp" />
+    <ClCompile Include="$(SolutionDir)\openvr\src\vrcore\envvartools_public.cpp" />
+    <ClCompile Include="$(SolutionDir)\openvr\src\vrcore\pathtools_public.cpp" />
+    <ClCompile Include="$(SolutionDir)\openvr\src\vrcore\sharedlibtools_public.cpp" />
+    <ClCompile Include="$(SolutionDir)\openvr\src\vrcore\hmderrors_public.cpp" />
+    <ClCompile Include="$(SolutionDir)\openvr\src\vrcore\vrpathregistry_public.cpp" />
+    <ClCompile Include="$(SolutionDir)\openvr\src\vrcore\strtools_public.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="D:\Users\David\Documents\Visual Studio 2010\Projects\Outerspacegit\openvr\ZERO_CHECK.vcxproj">
+    <ProjectReference Include="$(SolutionDir)\openvr\ZERO_CHECK.vcxproj">
       <Project>{5A858C47-2C9B-3F4D-89F8-32DCC7962BA9}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
