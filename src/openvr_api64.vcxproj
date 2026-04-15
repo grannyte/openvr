@@ -148,6 +148,7 @@
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <AdditionalOptions>/fp:contract </AdditionalOptions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;VR_API_PUBLIC;OPENVR_BUILD_STATIC;WIN64;VRCORE_NO_PLATFORM;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
