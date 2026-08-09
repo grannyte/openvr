@@ -82,6 +82,7 @@
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(TEMP)\$(ProjectName)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ForceConformanceInForLoopScope>
       </ForceConformanceInForLoopScope>
